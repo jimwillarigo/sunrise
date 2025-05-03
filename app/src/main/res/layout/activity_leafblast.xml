@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".leafblast">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ImageView at the top -->
+        <ImageView
+            android:id="@+id/resultImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leafblastimage"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="-80dp" /> <!-- Negative margin to make the ScrollView overlap -->
+
+        <!-- ScrollView to contain content that can scroll -->
+        <ScrollView
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Add your content inside the LinearLayout here-->
+                <EditText
+                    android:id="@+id/disease"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading" />
+
+                <TextView
+                    android:id="@+id/diseaseTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..." />
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..."
+                    android:hint="Description" />
+
+                <TextView
+                    android:id="@+id/descriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..." />
+
+                <TextView
+                    android:id="@+id/cobsd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="bold"
+                    android:text="What are the causes?" />
+
+                <EditText
+                    android:id="@+id/cause"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..."
+                    android:hint="Cause" />
+
+                <TextView
+                    android:id="@+id/causeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..." />
+
+                <TextView
+                    android:id="@+id/dummyone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="bold"
+                    android:text="What are the symptoms?" />
+
+                <EditText
+                    android:id="@+id/symptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..."
+                    android:hint="Symptoms" />
+
+                <TextView
+                    android:id="@+id/symptomsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..." />
+
+                <TextView
+                    android:id="@+id/preventdummy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="bold"
+                    android:text="How to prevent this disease?" />
+
+                <EditText
+                    android:id="@+id/prevent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..." />
+
+                <TextView
+                    android:id="@+id/prevenTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..." />
+
+                <TextView
+                    android:id="@+id/chemdummy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="bold"
+                    android:text="Chemical treatment" />
+
+                <EditText
+                    android:id="@+id/chemtreat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..." />
+
+                <TextView
+                    android:id="@+id/chemtreatTextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..." />
+
+                <TextView
+                    android:id="@+id/orgTreatdummy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="bold"
+                    android:text="Organic treatment" />
+
+                <EditText
+                    android:id="@+id/orgTreat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..." />
+
+                <TextView
+                    android:id="@+id/orgTreatTextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Loading..." />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Save Button outside the ScrollView -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            android:backgroundTint="#DAB325"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Save Changes" />
+    </LinearLayout>
+</FrameLayout>

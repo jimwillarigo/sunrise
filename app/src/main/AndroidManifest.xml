@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Sunrice"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".userforgotpass"
+            android:exported="false" />
+        <activity
+            android:name=".forgotpass"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Start"
+            android:exported="false" />
+        <activity
+            android:name=".stemborer"
+            android:exported="false" />
+        <activity
+            android:name=".tungro"
+            android:exported="false" />
+        <activity
+            android:name=".healthy"
+            android:exported="false"
+            android:label="@string/title_activity_healthy"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".neckblast"
+            android:exported="false" />
+        <activity
+            android:name=".leafblast"
+            android:exported="false" />
+        <activity
+            android:name=".brownspot"
+            android:exported="false" />
+        <activity
+            android:name=".addUser"
+            android:exported="false" />
+        <activity
+            android:name=".adminmodify"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
+            android:exported="true"> <!-- Set exported to true for launcher activity -->
+            <!-- This intent filter makes Start the launcher activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".adminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".dislib"
+            android:exported="false" />
+        <activity
+            android:name=".conOne"
+            android:exported="false" />
+        <activity
+            android:name=".admindashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

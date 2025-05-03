@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define a custom button style -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">#000000</item> <!-- Black hamburger icon -->
+    </style>
+
+</resources>

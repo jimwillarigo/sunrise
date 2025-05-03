@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="User Name"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15dp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/button_approve"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:paddingStart="14dp"
+        android:drawableStart="@drawable/approve"
+        android:visibility="gone"/> <!-- Initially hidden for regular users -->
+
+
+    <Button
+        android:id="@+id/button_modify"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:drawableStart="@drawable/eye"
+        android:background="@color/white"
+        android:paddingStart="15dp"
+        />
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:drawableStart="@drawable/delicon"
+        android:background="@color/white"
+        android:paddingStart="19dp"
+        />
+</LinearLayout>

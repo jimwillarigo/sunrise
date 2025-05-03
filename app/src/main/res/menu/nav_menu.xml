@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn = "navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_scan"
+            android:title="Dashboard"
+            />
+
+
+        <item
+            android:id="@+id/nav_conOne"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_conTwo"
+            android:title="History"/>
+
+        <item
+            android:id="@+id/nav_dislib"
+            android:title="Disease Library"/>
+
+
+        <item
+            android:title=""
+            android:enabled="false" />
+        <item
+            android:title=""
+            android:enabled="false" />
+        <item
+            android:title=""
+            android:enabled="false" />
+        <item
+            android:title=""
+            android:enabled="false" />
+        <item
+            android:title="______________________________________"
+            android:enabled="false" />
+
+
+
+
+        <item
+            android:id="@+id/nav_about"
+            android:title="About us"/>
+
+
+        <item
+            android:id="@+id/nav_conThree"
+            android:title="Log out"
+
+            />
+
+    </group>
+
+</menu>

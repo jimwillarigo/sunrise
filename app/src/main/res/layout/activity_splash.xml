@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0A50B"
+    tools:context=".splash">
+
+
+    <ImageView
+        android:id="@+id/gifImageView"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/sunricesplash"
+        tools:layout_editor_absoluteY="248dp" />
+
+
+</LinearLayout>

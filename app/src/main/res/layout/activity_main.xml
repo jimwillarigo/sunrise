@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_marginTop="70dp"
+            android:id="@+id/imageView"
+            android:layout_width="329dp"
+            android:layout_height="321dp"
+            app:srcCompat="@drawable/mainpic"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="43dp" />
+
+        <ImageView
+            android:layout_marginTop="70dp"
+            android:id="@+id/temporaryImageView"
+            android:layout_width="329dp"
+            android:layout_height="321dp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="43dp" />
+
+
+        <TextView
+            android:id="@+id/classified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="The condition of the rice varied:"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="422dp" />
+
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#CE7711"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="422dp" />
+
+        <TextView
+            android:id="@+id/demoText"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take or upload a photo first"
+            android:textColor="@color/black"
+            android:alpha="0.5"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+        <TextView
+            android:id="@+id/click_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to learn more^^^"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="422dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:visibility="invisible"
+            android:text="space"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="198dp"
+            android:layout_height="53dp"
+            android:background="@drawable/border"
+            android:drawablePadding="8dp"
+            android:paddingEnd="10dp"
+            android:drawableEnd="@drawable/capturelogo"
+            android:fontFamily="@font/montserrat"
+            android:text="Capture Image"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="618dp" />
+
+        <Button
+            android:id="@+id/buttonUpload"
+            android:layout_width="198dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:paddingEnd="10dp"
+            android:drawableEnd="@drawable/uploadlogo"
+            android:fontFamily="@font/montserrat"
+            android:text="Upload Image"
+            android:background="@drawable/border"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="618dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:elevation="0dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:visibility="visible"
+            app:titleTextColor="@color/black" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        android:visibility="visible"
+        app:headerLayout="@layout/nav_header"
+        app:itemTextColor="@color/custom_color_selector"
+
+        app:menu="@menu/nav_menu"
+
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

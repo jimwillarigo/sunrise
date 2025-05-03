@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_gravity="center"
+    tools:context=".dislib">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="311dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/saycheese" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBrownSpot"
+            android:layout_width="10dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginRight="10dp"
+            android:text="Brown Spot"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/brownspotlogo"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/buttonLeafBlast"
+            android:layout_width="10dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:text="Leaf Blast"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/leafblastlogo"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonNeckBlast"
+            android:layout_width="10dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginRight="10dp"
+            android:text="Neck Blast"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/neckblastlogo"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/buttonTungro"
+            android:layout_width="10dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:text="Tungro"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/tungrologo"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonStemBorer"
+            android:layout_width="10dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginRight="10dp"
+            android:text="Stem Borer"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/stemborerlogo"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/buttonHealthy"
+            android:layout_width="10dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:text="Healthy"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/healthylogo"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+</LinearLayout>

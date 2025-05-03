@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "84516015981",
+    "project_id": "sunrice-74b95",
+    "storage_bucket": "sunrice-74b95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84516015981:android:3feab65b52130cfb251464",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdufR_M2yK7mxfpblvuWFykj34x2SWW78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

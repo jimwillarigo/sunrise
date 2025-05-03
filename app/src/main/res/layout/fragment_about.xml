@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".about">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- ScrollView to contain content that can scroll -->
+        <ScrollView
+            android:padding="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Add your content inside the LinearLayout here-->
+                <EditText
+                    android:id="@+id/about"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="About Us" />
+
+                <TextView
+                    android:id="@+id/aboutTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="About Us" />
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Description" />
+
+                <TextView
+                    android:id="@+id/descriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Welcome to SunRice, your partner in keeping your rice crops healthy. Our app uses simple technology to help farmers easily identify rice plant diseases by capturing and uploading images. With SunRice, you can take action quickly to prevent and manage diseases, leading to better harvests and stronger crops. " />
+
+
+                <TextView
+                    android:id="@+id/Mission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="bold"
+                    android:text="Mission" />
+
+                <EditText
+                    android:id="@+id/missiondes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="missiondes" />
+
+                <TextView
+                    android:id="@+id/missionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="To help farmers protect their rice plants by providing an easy-to-use tool for detecting and managing diseases, promoting healthier crops and sustainable farming. " />
+
+                <TextView
+                    android:id="@+id/Vission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="bold"
+                    android:text="Vission" />
+
+                <EditText
+                    android:id="@+id/vissiondes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="vissiondes" />
+
+                <TextView
+                    android:id="@+id/vissionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="To be a trusted name in agricultural technology, helping farmers grow healthy rice crops and secure their livelihoods. " />
+
+
+                <EditText
+                    android:id="@+id/sunricedes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="sunricedes" />
+
+                <TextView
+                    android:id="@+id/SunRiceTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="SunRice is more than just an app it’s your companion in caring for your crops. Together, we can make farming easier and more productive. If you need help or have questions, email us at sunrice712@gmail.com. Or contact us at 09065617691 "/>
+
+                <EditText
+                    android:id="@+id/motodes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="motodes" />
+
+                <TextView
+                    android:id="@+id/MotoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Say Cheese, Rice Leaves!"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</FrameLayout>
